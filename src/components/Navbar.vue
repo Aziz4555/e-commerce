@@ -76,16 +76,16 @@ export default {
         if(cart.classList.contains('visible')){
 
           cart.classList.remove('visible');
-          cart.classList.remove('right-0');
-          cart.classList.add('-right-1/4');
+          cart.classList.remove('lg:right-0');
+          cart.classList.add('lg:-right-1/4');
           cart.classList.add('invisible');
 
 
         }else{
 
           cart.classList.remove('invisible');
-          cart.classList.remove('-right-1/4')
-          cart.classList.add('right-0');
+          cart.classList.remove('lg:-right-1/4')
+          cart.classList.add('lg:right-0');
           cart.classList.add('visible');
 
         }

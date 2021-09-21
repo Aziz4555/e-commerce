@@ -1,5 +1,5 @@
 <template>
- <div id="cart" class="fixed bg-gradient-to-l from-white to-gray_cart top-0 bottom-0 lg-right-1/4 lg-w-1/4 -right-11/12 w-11/12 invisible">
+ <div id="cart" class="fixed bg-gradient-to-l from-white to-gray_cart top-0 bottom-0 lg:-right-1/4 lg:w-1/4 -right-11/12 w-11/12 invisible">
    <div class="flex justify-between px-2">
      <h1 class="text-center py-3">Panier</h1>
      <button>
@@ -56,16 +56,16 @@ export default {
         if(cart.classList.contains('visible')){
 
           cart.classList.remove('visible');
-          cart.classList.remove('right-0');
-          cart.classList.add('-right-1/4');
+          cart.classList.remove('lg:right-0');
+          cart.classList.add('lg:-right-1/4');
           cart.classList.add('invisible');
 
 
         }else{
 
           cart.classList.remove('invisible');
-          cart.classList.remove('-right-1/4')
-          cart.classList.add('right-0');
+          cart.classList.remove('lg:-right-1/4')
+          cart.classList.add('lg:right-0');
           cart.classList.add('visible');
 
         }
