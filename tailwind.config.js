@@ -30,6 +30,22 @@ module.exports = {
             right: '-25%',
           },
         },
+        "slideRightResponsive":{
+          '0%': {
+            right: '-91.666667%',
+          },
+          '100%': {
+            right: '0',
+          },
+        },
+        "slideLeftResponsive": {
+          '0%': {
+            right: '0',
+          },
+          '100%': {
+            right: '-91.666667%',
+          }
+        },
 
         "zoom" :{
           '0%': {
@@ -44,6 +60,8 @@ module.exports = {
       animation:{
         'slideRight': 'slideRight 0.8s',
         'slideLeft': 'slideLeft 0.8s',
+        'slideRightResponsive':'slideRightResponsive 0.8s',
+        'slideLeftResponsive':'slideLeftResponsive 0.8s',
         'zoom': 'zoom 0.5s infinite'
       }
 
